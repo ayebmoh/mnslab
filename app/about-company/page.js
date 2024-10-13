@@ -26,7 +26,7 @@ export default function AboutCompany() {
                       </span>
                       <h2 className="title">
                         Make your life easier with help from{" "}
-                        <span className="texts-blue">Network Minutes Labs</span>
+                        <span className="texts-blue">Minutes Network Labs</span>
                       </h2>
                     </div>
                     <ul className="icon-listing">

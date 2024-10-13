@@ -1,11 +1,12 @@
 "use client";
 import Layout from "@/components/layout/Layout";
-import Service4 from "@/components/sections/Service4";
 import Link from "next/link";
 import { useState } from "react";
+
 export default function ServiceDetails() {
   const [isTab, setIsTab] = useState(1);
   const [isVisible, setIsVisible] = useState(true);
+
   const handleTab = (i) => {
     setIsTab(i);
     setIsVisible(false);
@@ -13,9 +14,10 @@ export default function ServiceDetails() {
       setIsVisible(true);
     }, 200);
   };
+
   return (
     <>
-      <Layout breadcrumbTitle="Web & Mobile Development">
+      <Layout breadcrumbTitle="Digital Marketing Strategy">
         <div>
           <section className="section-benefit pt-122">
             <div className="tf-container">
@@ -24,28 +26,25 @@ export default function ServiceDetails() {
                   <div className="benefit-content">
                     <div className="heading-title mb-40">
                       <span className="sub-title texts-blue font-man">
-                        Best Features Development
+                        Best Features of Our Strategy
                       </span>
                       <h2 className="title">
-                        Benefits of Managed IT Services Provided
+                        Benefits of Choosing Our Digital Marketing Strategy
                       </h2>
                       <p className="des">
-                        Our Managed IT Services offer comprehensive solutions to
-                        streamline your technology infrastructure and support
-                        your business growth. By outsourcing your IT management
-                        to our team of experts, you gain access to cutting-edge
-                        technology, proactive monitoring, and round-the-clock
-                        support, all while reducing operational costs. We help
-                        you stay ahead of potential issues, ensuring uptime,
-                        enhanced security, and efficient system performance. Our
-                        services allow your team to focus on core business
-                        operations while we handle IT complexities, delivering
-                        reliable and scalable solutions tailored to your needs.
+                        Our digital marketing strategy is built around helping
+                        you reach the right audience at the right time. We use
+                        data-driven methods and the latest trends to enhance
+                        your online presence, boost brand awareness, and drive
+                        measurable results. Whether you're looking for SEO,
+                        social media management, or paid advertising campaigns,
+                        we've got you covered.
                       </p>
                     </div>
                     <img
-                      src="/assets/images/page/dvl-deatils.jpg"
-                      alt="image"
+                      style={{ height: "330px" }}
+                      src="/assets/images/service/digital-marketing.jpg"
+                      alt="Digital Marketing Strategy Image"
                     />
                   </div>
                 </div>
@@ -55,41 +54,41 @@ export default function ServiceDetails() {
                       <li>
                         <div className="flex-three">
                           <i className="icon-Check" />
-                          <h4>IT Manage Service</h4>
+                          <h4>Data-Driven Insights</h4>
                         </div>
                         <p>
-                          Providing comprehensive IT solutions to ensure the
-                          smooth and secure operation of the systems.
+                          We use in-depth analytics to craft strategies tailored
+                          to your business needs and target audience.
                         </p>
                       </li>
                       <li>
                         <div className="flex-three">
                           <i className="icon-Check" />
-                          <h4>Keeping Team Productive</h4>
+                          <h4>Multi-Channel Approach</h4>
                         </div>
                         <p>
-                          Empowering the team with tools and support to maximize
-                          productivity and efficiency.
+                          Combining SEO, social media, email marketing, and paid
+                          ads for maximum impact.
                         </p>
                       </li>
                       <li>
                         <div className="flex-three">
                           <i className="icon-Check" />
-                          <h4>Predictable Costs 24/7</h4>
+                          <h4>SEO Optimization</h4>
                         </div>
                         <p>
-                          Delivering reliable IT services with consistent,
-                          round-the-clock cost management.
+                          Optimizing your website and content to rank higher on
+                          search engines and drive organic traffic.
                         </p>
                       </li>
                       <li>
                         <div className="flex-three">
                           <i className="icon-Check" />
-                          <h4>Team is Ready to Help</h4>
+                          <h4>Audience Engagement</h4>
                         </div>
                         <p>
-                          The team is always available to provide expert support
-                          and assistance when needed.
+                          Enhancing audience engagement through targeted
+                          campaigns and high-quality content.
                         </p>
                       </li>
                     </ul>
@@ -98,6 +97,7 @@ export default function ServiceDetails() {
               </div>
             </div>
           </section>
+
           <section className="section-it-manager pt-130 pb-130">
             <div className="tf-container">
               <div className="row">
@@ -105,11 +105,11 @@ export default function ServiceDetails() {
                   <div className="it-manager-content">
                     <div className="heading-title mb-20">
                       <span className="sub-title texts-blue font-man">
-                        How to Manage
+                        How We Work
                       </span>
                       <h2 className="title">
-                        Our Managed IT Services let you Concentrate on What
-                        Matters
+                        Our Process for Building a Winning Digital Marketing
+                        Strategy
                       </h2>
                     </div>
                     <ul
@@ -180,33 +180,33 @@ export default function ServiceDetails() {
                       >
                         <div className="content-tab-service-details">
                           <p className="des">
-                            At veroeos accusamus dignissimos ducimus blanditiis
-                            volupta delenite atque corrupti quos dolores et quas
-                            molestias excepturi sint occaecatie
+                            Our approach revolves around in-depth market
+                            research, competitor analysis, and understanding
+                            your unique business needs. We ensure that every
+                            aspect of your strategy is backed by data and
+                            optimized for maximum results.
                           </p>
                           <ul className="icon-listing">
                             <li className="flex-three">
                               <i className="icon-Check" />
                               <p className="font-man">
-                                Efficient Sprint Planning
+                                Market Research & Audience Segmentation
                               </p>
                             </li>
                             <li className="flex-three">
                               <i className="icon-Check" />
                               <p className="font-man">
-                                Iterative Delivery Approach
+                                Content Strategy & Creation
                               </p>
                             </li>
                             <li className="flex-three">
                               <i className="icon-Check" />
-                              <p className="font-man">Standups and Demos</p>
-                            </li>
-                            <li className="flex-three">
-                              <i className="icon-Check" />
-                              <p className="font-man">Problem-solving</p>
+                              <p className="font-man">
+                                Performance Optimization
+                              </p>
                             </li>
                           </ul>
-                          <Link href="/#" className="button-src">
+                          <Link href="/contact-us" className="button-src">
                             Learn More <i className="icon-angle-right" />
                           </Link>
                         </div>
@@ -224,33 +224,32 @@ export default function ServiceDetails() {
                       >
                         <div className="content-tab-service-details">
                           <p className="des">
-                            At veroeos accusamus dignissimos ducimus blanditiis
-                            volupta delenite atque corrupti quos dolores et quas
-                            molestias excepturi sint occaecatie
+                            Our goal is to help you increase brand awareness,
+                            generate qualified leads, and drive conversions
+                            through well-executed digital marketing strategies
+                            tailored to your business.
                           </p>
                           <ul className="icon-listing">
                             <li className="flex-three">
                               <i className="icon-Check" />
                               <p className="font-man">
-                                Efficient Sprint Planning
+                                Higher Brand Visibility
                               </p>
                             </li>
                             <li className="flex-three">
                               <i className="icon-Check" />
                               <p className="font-man">
-                                Iterative Delivery Approach
+                                Lead Generation & Nurturing
                               </p>
                             </li>
                             <li className="flex-three">
                               <i className="icon-Check" />
-                              <p className="font-man">Standups and Demos</p>
-                            </li>
-                            <li className="flex-three">
-                              <i className="icon-Check" />
-                              <p className="font-man">Problem-solving</p>
+                              <p className="font-man">
+                                Conversion Rate Optimization
+                              </p>
                             </li>
                           </ul>
-                          <Link href="/#" className="button-src">
+                          <Link href="/contact-us" className="button-src">
                             Learn More <i className="icon-angle-right" />
                           </Link>
                         </div>
@@ -268,33 +267,25 @@ export default function ServiceDetails() {
                       >
                         <div className="content-tab-service-details">
                           <p className="des">
-                            At veroeos accusamus dignissimos ducimus blanditiis
-                            volupta delenite atque corrupti quos dolores et quas
-                            molestias excepturi sint occaecatie
+                            Our advisory services are designed to keep your
+                            digital marketing strategy aligned with industry
+                            changes. We provide ongoing optimization and
+                            strategic advice to help you stay ahead of your
+                            competitors.
                           </p>
                           <ul className="icon-listing">
                             <li className="flex-three">
                               <i className="icon-Check" />
-                              <p className="font-man">
-                                Efficient Sprint Planning
-                              </p>
+                              <p className="font-man">Strategic Guidance</p>
                             </li>
                             <li className="flex-three">
                               <i className="icon-Check" />
                               <p className="font-man">
-                                Iterative Delivery Approach
+                                Industry Best Practices
                               </p>
-                            </li>
-                            <li className="flex-three">
-                              <i className="icon-Check" />
-                              <p className="font-man">Standups and Demos</p>
-                            </li>
-                            <li className="flex-three">
-                              <i className="icon-Check" />
-                              <p className="font-man">Problem-solving</p>
                             </li>
                           </ul>
-                          <Link href="/#" className="button-src">
+                          <Link href="/contact-us" className="button-src">
                             Learn More <i className="icon-angle-right" />
                           </Link>
                         </div>
@@ -303,17 +294,17 @@ export default function ServiceDetails() {
                   </div>
                 </div>
                 <div className="col-md-5">
-                  <div className="it-manager-image">
+                  <div className="it-manager-img">
                     <img
-                      src="/assets/images/page/dvl-deatils2.jpg"
-                      alt="image"
+                      className={isVisible ? "fade-in visible" : "fade-in"}
+                      src={`/assets/images/service/marketing-service2.png`}
+                      alt="Digital Marketing Process"
                     />
                   </div>
                 </div>
               </div>
             </div>
           </section>
-          <Service4 />
         </div>
       </Layout>
     </>

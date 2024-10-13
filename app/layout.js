@@ -9,7 +9,7 @@ const nunito = Nunito({
   display: "swap",
 });
 export const metadata = {
-  title: "Network Minutes Labs",
+  title: "Minutes Network Labs",
   description: "IT services",
   icons: {
     icon: "/favicon.ico",

@@ -1,10 +1,9 @@
 @charset "UTF-8";
-/**
-  * Name: WiaTech - IT Services & Development HTML Template
-  * Version: 1.0.2
-  * Author: Themesflat
-  * Author URI: http://www.themesflat.com
-*/
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @import "animate.css";
 @import "jquery.fancybox.min.css";
 @import "magnific-popup.css";
@@ -5020,7 +5019,7 @@
   width: 100%;
   height: 100%;
   background: #ffffff;
-
+  position: fixed;
   top: 0;
   bottom: 0;
   right: 0;
@@ -9054,56 +9053,6 @@
   display: block;
 }
 
-/**
-  	* Header Style 01
-    * Header Style 02
-    * Header Style 03
-    * Header Style 04
-    * Footer Style 01
-    * Footer Style 02
-    * Footer Style 03
-    * Footer Style 04
-*/
-/* Abstracts variable
-
-    * Reset css styles
-
-    * Components
-        * header
-        * footer
-        * tabs
-        * slider banner
-        * button
-        * form
-        * nice select
-        * swiper
-        * off canvas
-        * hover
-        * preloader
-
-    * section
-
-    * Responsive
- ------------------------------------------------------------------------------ */
-/**
-  	* Reset Browsers
-	* Elements
-  	* Forms
-	* Typography
-	* Extra classes
-	* link style
-    * search
-    * Header Fixed
-    * Pagination
-    * Scroll Top
-    * PreLoad
-    * heading 
-    * dropdown
-    * progress bar
-    * map
-    * up load 
-    * price range 
-*/
 html,
 body,
 div,
@@ -11994,3 +11943,23 @@ body .dribbble img {
 }
 
 /*# sourceMappingURL=app.css.map */
+
+.privacy-container {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100vh; /* Full viewport height */
+  padding: 0 20px; /* Add padding on left and right */
+  overflow-y: auto; /* Allow vertical scrolling */
+}
+
+.privacy-section {
+  max-width: 800px; /* Set a max width for the content */
+  width: 100%; /* Ensure it takes the full width of the container */
+  background-color: #ffffff; /* Background color for better readability */
+  border-radius: 8px; /* Optional: Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Subtle shadow */
+  padding: 20px; /* Add padding inside the section */
+  overflow-y: auto; /* Enable scrolling for long content */
+  max-height: 80vh; /* Limit height to keep it within the viewport */
+}

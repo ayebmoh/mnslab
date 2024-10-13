@@ -1,4 +1,32 @@
+"use client";
+import React, { useState, useRef } from "react";
+import emailjs from "@emailjs/browser";
 export default function Contact1() {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_oph2z9c",
+        "template_ys4l01b",
+        form.current,
+        "IUlLms7VhTVDu5cOQ"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          setemailsub(true);
+          e.target.reset();
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+
+  const [emailsub, setemailsub] = useState(false);
   return (
     <>
       <section
@@ -26,20 +54,18 @@ export default function Contact1() {
                     className="des font-man text-white wow fadeInUpSmall"
                     data-wow-delay=".4s"
                   >
-                    Our expert team excels in website development, graphic
-                    design, digital marketing, and content creation to elevate
-                    and grow your business.
+                    Have questions about our services? Whether you need
+                    assistance with product design, IT management, data
+                    security, infrastructure planning, firewall advancements,
+                    desktop computing, market research, or web and mobile
+                    development, our team is here to help. Reach out to us to
+                    discuss your project requirements, and we'll provide
+                    tailored solutions to meet your business needs. Contact us
+                    today to get expert guidance and start turning your ideas
+                    into reality.
                   </p>
                 </div>
-                {/* <div className="contact-wrap flex-three mb-40 wow fadeInUpSmall" data-wow-delay=".4s">
-									<div className="icon">
-										<i className="icon-phones" />
-									</div>
-									<div className="contact-content">
-										<span className="font-man">Call For Inquiry</span>
-										<p>+236 (456) 896 22</p>
-									</div>
-								</div> */}
+
                 <div
                   className="contact-wrap flex-three wow fadeInUpSmall"
                   data-wow-delay=".5s"
@@ -49,7 +75,7 @@ export default function Contact1() {
                   </div>
                   <div className="contact-content">
                     <span className="font-man">Send Us Email</span>
-                    <p>infotech@gmail.com</p>
+                    <p>admin@mntlabs.io</p>
                   </div>
                 </div>
               </div>
@@ -63,17 +89,16 @@ export default function Contact1() {
                   </p>
                 </div>
                 <form
+                  ref={form}
+                  onSubmit={sendEmail}
                   className="form-contact-home"
-                  id="contactform"
-                  method="post"
-                  action="./contact/contact-process.php"
                 >
                   <div className="input-group flex-one">
                     <fieldset className="relative mb-20">
                       <input
                         type="text"
                         className="form-control"
-                        id="name-input"
+                        id="name"
                         placeholder="Name"
                         name="name"
                         required
@@ -84,7 +109,7 @@ export default function Contact1() {
                       <input
                         type="email"
                         className="form-control"
-                        id="email-input"
+                        id="email"
                         placeholder="Email"
                         name="email"
                         required
@@ -93,34 +118,34 @@ export default function Contact1() {
                     </fieldset>
                   </div>
                   <fieldset className="mb-20">
-                    <div
+                    <select
                       className="nice-select"
-                      tabIndex={0}
-                      name="drop"
-                      id="drop"
+                      name="services"
+                      id="services"
                       required
                     >
-                      <span className="current">Choose Services</span>
-                      <ul className="list">
-                        <li data-value className="option selected focus">
-                          Choose Services
-                        </li>
-                        <li data-value="service" className="option">
-                          {" "}
-                          Services 1
-                        </li>
-                        <li data-value="service" className="option">
-                          {" "}
-                          Services 2
-                        </li>
-                        <li data-value="service" className="option">
-                          {" "}
-                          Services 3
-                        </li>
-                      </ul>
-                    </div>
+                      <option value="" disabled selected>
+                        Choose Service
+                      </option>
+
+                      <option value="productDesign">Product Design</option>
+                      <option value="itManagement">IT Management</option>
+                      <option value="dataSecurity">Data Security</option>
+                      <option value="infrastructurePlanning">
+                        Infrastructure Planning
+                      </option>
+                      <option value="firewallAdvancement">
+                        Firewall Advancement
+                      </option>
+                      <option value="desktopComputing">
+                        Desktop Computing
+                      </option>
+                      <option value="marketResearch">Market Research</option>
+                      <option value="webDevelopment">Web Development</option>
+                      <option value="Other">Other</option>
+                    </select>
                   </fieldset>
-                  <fieldset className=" mb-15">
+                  <fieldset className="mb-15">
                     <textarea
                       rows={4}
                       cols={50}
@@ -135,6 +160,11 @@ export default function Contact1() {
                       Send Message Us <i className="icon-right-icon" />
                     </button>
                   </fieldset>
+                  {emailsub && (
+                    <p className="text-green-500 text-sm mt-2">
+                      email sent successfully!
+                    </p>
+                  )}
                 </form>
               </div>
             </div>

@@ -31,8 +31,8 @@ export default function Header2({
                         <Link href="/">
                           <img
                             style={{
-                              width: "130px",
-                              height: "100px",
+                              width: "100px",
+                              height: "90px",
                               marginTop: "5px",
                               marginBottom: "8px",
                               marginLeft: "40px",

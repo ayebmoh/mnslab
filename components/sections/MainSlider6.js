@@ -40,10 +40,7 @@ export default function MainSlider6() {
                     className="btn-main wow fadeInUpSmall"
                     data-wow-delay=".5s"
                   >
-                    <Link
-                      href="/about-company"
-                      className="learn-more text-white"
-                    >
+                    <Link href="/faq" className="learn-more text-white">
                       Learn More <i className="icon-angle-right" />
                     </Link>
                   </div>

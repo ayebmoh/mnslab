@@ -32,9 +32,13 @@ export default function Faq() {
                     <span className="sub-title texts-blue font-man">FAQ</span>
                     <h2 className="title">Frequently Asked Questions</h2>
                     <p className="des mb-40">
-                      Sed ut perspiciatis unde omniste natus voluptatem
-                      accusantiume rem aperia eaque quae abillo inventore
-                      veritatis quasi architecto beatae vitae
+                      Welcome to our Frequently Asked Questions section! Here,
+                      we’ve compiled answers to some of the most common
+                      questions we receive. Whether you're looking for
+                      information about our services, policies, or how to get
+                      started, this is the place to find quick and helpful
+                      responses. If you don't find the answer you're looking
+                      for, feel free to reach out to us directly!
                     </p>
                     <Link href="/#" className="button-src">
                       Read More <i className="icon-angle-right" />
@@ -43,92 +47,6 @@ export default function Faq() {
                 </div>
                 <div className="col-md-7">
                   <div className="tab-faq-content">
-                    <ul
-                      className="nav nav-pills tab-faq-page mb-30"
-                      id="pills-tab"
-                      role="tablist"
-                    >
-                      <li className="nav-item" onClick={() => handleTab(1)}>
-                        <button
-                          className={
-                            isTab == 1 ? "nav-link active" : "nav-link"
-                          }
-                          id="general-tab"
-                          data-bs-toggle="pill"
-                          data-bs-target="#general"
-                          type="button"
-                          role="tab"
-                          aria-controls="general"
-                          aria-selected="true"
-                        >
-                          General
-                        </button>
-                      </li>
-                      <li className="nav-item" onClick={() => handleTab(2)}>
-                        <button
-                          className={
-                            isTab == 2 ? "nav-link active" : "nav-link"
-                          }
-                          id="service-tab"
-                          data-bs-toggle="pill"
-                          data-bs-target="#service"
-                          type="button"
-                          role="tab"
-                          aria-controls="service"
-                          aria-selected="false"
-                        >
-                          Service
-                        </button>
-                      </li>
-                      <li className="nav-item" onClick={() => handleTab(3)}>
-                        <button
-                          className={
-                            isTab == 3 ? "nav-link active" : "nav-link"
-                          }
-                          id="product-tab"
-                          data-bs-toggle="pill"
-                          data-bs-target="#product"
-                          type="button"
-                          role="tab"
-                          aria-controls="product"
-                          aria-selected="false"
-                        >
-                          Product
-                        </button>
-                      </li>
-                      <li className="nav-item" onClick={() => handleTab(4)}>
-                        <button
-                          className={
-                            isTab == 4 ? "nav-link active" : "nav-link"
-                          }
-                          id="team-tab"
-                          data-bs-toggle="pill"
-                          data-bs-target="#team"
-                          type="button"
-                          role="tab"
-                          aria-controls="team"
-                          aria-selected="false"
-                        >
-                          Team
-                        </button>
-                      </li>
-                      <li className="nav-item" onClick={() => handleTab(5)}>
-                        <button
-                          className={
-                            isTab == 5 ? "nav-link active" : "nav-link"
-                          }
-                          id="pricing-tab"
-                          data-bs-toggle="pill"
-                          data-bs-target="#pricing"
-                          type="button"
-                          role="tab"
-                          aria-controls="pricing"
-                          aria-selected="false"
-                        >
-                          Pricing
-                        </button>
-                      </li>
-                    </ul>
                     <div className="tab-content" id="pills-tabContent">
                       <div
                         className={
@@ -175,10 +93,35 @@ export default function Faq() {
                               data-bs-parent="#accordionExample"
                             >
                               <div className="accordion-body">
-                                We approached Minutes Network Labs with complex
-                                project Designing a website can involve various
-                                such as layout, graphics, content, and
-                                experience more specific response elaborate
+                                <p>
+                                  The cost of building an app can vary greatly
+                                  depending on the app's complexity, features,
+                                  platforms, and design. Here's a rough
+                                  breakdown:
+                                </p>
+
+                                <h6>Basic App :</h6>
+                                <p>Basic functionality, few screens.</p>
+
+                                <h6>Medium Complexity App:</h6>
+                                <p>
+                                  Custom UI, third-party integrations, backend
+                                  development.
+                                </p>
+
+                                <h6>Complex App:</h6>
+                                <p>
+                                  Advanced features, multi-platform support,
+                                  custom animations, large databases.
+                                </p>
+
+                                <p>
+                                  Factors like app design, the number of
+                                  platforms (iOS, Android, Web), and post-launch
+                                  maintenance also affect the overall cost. We
+                                  offer custom quotes after discussing your
+                                  specific requirements.
+                                </p>
                               </div>
                             </div>
                           </div>
@@ -212,10 +155,17 @@ export default function Faq() {
                               data-bs-parent="#accordionExample"
                             >
                               <div className="accordion-body">
-                                We approached Minutes Network Labs with complex
-                                project Designing a website can involve various
-                                such as layout, graphics, content, and
-                                experience more specific response elaborate
+                                You can create an app without coding by using
+                                no-code platforms like Bubble, Adalo, or Glide.
+                                These tools provide drag-and-drop interfaces and
+                                templates, allowing you to design and build apps
+                                easily. Just choose a platform, define your
+                                app’s features, drag-and-drop elements to
+                                customize it, and publish it to app stores. It's
+                                a simple way to create apps without writing
+                                code, though advanced features may require more
+                                technical expertise and we are happy to help
+                                with that.
                               </div>
                             </div>
                           </div>
@@ -249,10 +199,16 @@ export default function Faq() {
                               data-bs-parent="#accordionExample"
                             >
                               <div className="accordion-body">
-                                We approached Minutes Network Labs with complex
-                                project Designing a website can involve various
-                                such as layout, graphics, content, and
-                                experience more specific response elaborate
+                                Creating an app for free is not feasible for
+                                most professional-grade apps. While there are
+                                platforms like no-code app builders (e.g.,
+                                AppGyver, Bubble), these have limited
+                                functionality and scalability. Custom
+                                development requires expertise, which incurs
+                                costs for developers, designers, and project
+                                managers. However, we do provide consultations
+                                to help you understand the potential costs and
+                                timelines based on your vision.
                               </div>
                             </div>
                           </div>
@@ -286,10 +242,58 @@ export default function Faq() {
                               data-bs-parent="#accordionExample"
                             >
                               <div className="accordion-body">
-                                We approached Minutes Network Labs with complex
-                                project Designing a website can involve various
-                                such as layout, graphics, content, and
-                                experience more specific response elaborate
+                                <p>
+                                  You can create your own app by following these
+                                  steps:
+                                </p>
+
+                                <h6>1. Idea Development</h6>
+                                <p>
+                                  Define the app’s purpose, target audience, and
+                                  features.
+                                </p>
+
+                                <h6>2. Design & Planning</h6>
+                                <p>
+                                  Sketch wireframes or mockups and plan out the
+                                  user experience (UX).
+                                </p>
+
+                                <h6>3. Choose a Development Approach</h6>
+                                <ul>
+                                  <li>
+                                    No-code platforms (for simple apps) like
+                                    Adalo or Glide.
+                                  </li>
+                                  <li>
+                                    Hiring a development team if you need a
+                                    custom, scalable app.
+                                  </li>
+                                </ul>
+
+                                <h6>4. Development</h6>
+                                <p>
+                                  Code the app or use a drag-and-drop platform.
+                                </p>
+
+                                <h6>5. Testing</h6>
+                                <p>
+                                  Thoroughly test the app for bugs and
+                                  usability.
+                                </p>
+
+                                <h6>6. Launch</h6>
+                                <p>
+                                  Publish on platforms like Google Play and the
+                                  App Store.
+                                </p>
+
+                                <p>
+                                  If you're not experienced in development,
+                                  working with a professional app development
+                                  company is the best route to ensure quality
+                                  and performance.
+                                </p>
                               </div>
                             </div>
                           </div>
@@ -323,10 +327,42 @@ export default function Faq() {
                               data-bs-parent="#accordionExample"
                             >
                               <div className="accordion-body">
-                                We approached Minutes Network Labs with complex
-                                project Designing a website can involve various
-                                such as layout, graphics, content, and
-                                experience more specific response elaborate
+                                <h6>1. Research the Market</h6>
+                                <p>
+                                  Identify a problem that your app can solve or
+                                  a niche that is underserved.
+                                </p>
+
+                                <h6>2. Develop a Business Plan</h6>
+                                <p>
+                                  Outline your business model, target market,
+                                  and monetization strategy (e.g., in-app
+                                  purchases, subscriptions).
+                                </p>
+
+                                <h6>3. Build the App</h6>
+                                <p>
+                                  Partner with a development company or hire
+                                  developers to bring your vision to life.
+                                </p>
+
+                                <h6>4. Launch the App</h6>
+                                <p>
+                                  Create marketing strategies to promote the app
+                                  on various platforms.
+                                </p>
+
+                                <h6>5. Continuous Improvement</h6>
+                                <p>
+                                  Gather user feedback and update the app with
+                                  new features to retain users.
+                                </p>
+
+                                <p>
+                                  We help app businesses by providing end-to-end
+                                  services from idea validation to development
+                                  and post-launch support.
+                                </p>
                               </div>
                             </div>
                           </div>

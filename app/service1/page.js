@@ -46,7 +46,7 @@ export default function Service1() {
               <div className="row relative z-index-3">
                 <div className="col-md-4">
                   <div className="tf-image-box2 style-dark">
-                    <Link href="/#" className="image">
+                    <Link href="/contact-us" className="image">
                       <img
                         src="/assets/images/image-box/os-h31.svg"
                         alt="image"
@@ -57,7 +57,7 @@ export default function Service1() {
                       <div className="image-box-inner flex-three">
                         <span className="number">1</span>
                         <h3 className="title">
-                          <Link href="/#">
+                          <Link href="/contact-us">
                             Defense Arsenal Unveiling Our Cyber Security Suite
                           </Link>
                         </h3>
@@ -67,7 +67,7 @@ export default function Service1() {
                 </div>
                 <div className="col-md-4">
                   <div className="tf-image-box2 style-dark">
-                    <Link href="/#" className="image">
+                    <Link href="/contact-us" className="image">
                       <img
                         src="/assets/images/image-box/os-h32.svg"
                         alt="image"
@@ -78,7 +78,7 @@ export default function Service1() {
                       <div className="image-box-inner flex-three">
                         <span className="number">2</span>
                         <h3 className="title">
-                          <Link href="/#">
+                          <Link href="/contact-us">
                             Fortified Protection Explore Our Robust Security
                             Features
                           </Link>
@@ -89,7 +89,7 @@ export default function Service1() {
                 </div>
                 <div className="col-md-4">
                   <div className="tf-image-box2 style-dark">
-                    <Link href="/#" className="image">
+                    <Link href="/contact-us" className="image">
                       <img
                         src="/assets/images/image-box/os-h33.svg"
                         alt="image"
@@ -100,7 +100,7 @@ export default function Service1() {
                       <div className="image-box-inner flex-three">
                         <span className="number">3</span>
                         <h3 className="title">
-                          <Link href="/#">
+                          <Link href="/contact-us">
                             Empowering Digital Safety at Every Level Protection
                           </Link>
                         </h3>
@@ -170,7 +170,7 @@ export default function Service1() {
               <div className="feature-h2-wrap feature-service-page">
                 <div className="row mt--70 mb-40">
                   <div className="col-12 col-md-6 col-lg-3">
-                    <Link href="/service-details" className="icon-box3 active">
+                    <Link href="/contact-us" className="icon-box3 active">
                       <div className="flex-two icon-box-wrap">
                         <span className="number">01</span>
                         <div className="icons">
@@ -180,7 +180,8 @@ export default function Service1() {
                       <h3 className="title">Product Design</h3>
                       <div className="inner-bottom">
                         <p className="des font-man">
-                          We approached WiaTech with complex project deliver
+                          Minutes Network Labs provides expert product design
+                          solutions to bring your ideas to life.
                         </p>
                         <div className="icon-bottom">
                           <i className="icon-arrow-right" />
@@ -189,7 +190,7 @@ export default function Service1() {
                     </Link>
                   </div>
                   <div className="col-12 col-md-6 col-lg-3">
-                    <Link href="/service-details" className="icon-box3">
+                    <Link href="/contact-us" className="icon-box3">
                       <div className="flex-two icon-box-wrap">
                         <span className="number">02</span>
                         <div className="icons">
@@ -199,7 +200,8 @@ export default function Service1() {
                       <h3 className="title">IT Management</h3>
                       <div className="inner-bottom">
                         <p className="des font-man">
-                          We approached WiaTech with complex project deliver
+                          Minutes Network Labs provides reliable IT management
+                          to streamline your business operations.
                         </p>
                         <div className="icon-bottom">
                           <i className="icon-arrow-right" />
@@ -208,7 +210,7 @@ export default function Service1() {
                     </Link>
                   </div>
                   <div className="col-12 col-md-6 col-lg-3">
-                    <Link href="/service-details" className="icon-box3">
+                    <Link href="/contact-us" className="icon-box3">
                       <div className="flex-two icon-box-wrap">
                         <span className="number">03</span>
                         <div className="icons">
@@ -218,7 +220,8 @@ export default function Service1() {
                       <h3 className="title">Data Security</h3>
                       <div className="inner-bottom">
                         <p className="des font-man">
-                          We approached WiaTech with complex project deliver
+                          Minutes Network Labs provides robust data security to
+                          protect your sensitive information.
                         </p>
                         <div className="icon-bottom">
                           <i className="icon-arrow-right" />
@@ -227,7 +230,7 @@ export default function Service1() {
                     </Link>
                   </div>
                   <div className="col-12 col-md-6 col-lg-3">
-                    <Link href="/service-details" className="icon-box3">
+                    <Link href="/contact-us" className="icon-box3">
                       <div className="flex-two icon-box-wrap">
                         <span className="number">04</span>
                         <div className="icons">
@@ -237,7 +240,8 @@ export default function Service1() {
                       <h3 className="title">Infrastructure Plan</h3>
                       <div className="inner-bottom">
                         <p className="des font-man">
-                          We approached WiaTech with complex project deliver
+                          Minutes Network Labs provides expert infrastructure
+                          planning to optimize your IT environment.
                         </p>
                         <div className="icon-bottom">
                           <i className="icon-arrow-right" />
@@ -246,17 +250,18 @@ export default function Service1() {
                     </Link>
                   </div>
                   <div className=" col-12 col-md-6 col-lg-3">
-                    <Link href="/service-details" className="icon-box3">
+                    <Link href="/contact-us" className="icon-box3">
                       <div className="flex-two icon-box-wrap">
                         <span className="number">05</span>
                         <div className="icons">
                           <i className="icon-start-up" />
                         </div>
                       </div>
-                      <h3 className="title">Firewall Advancement</h3>
+                      <h3 className="title">Firewall</h3>
                       <div className="inner-bottom">
                         <p className="des font-man">
-                          We approached WiaTech with complex project deliver
+                          Minutes Network Labs provides advanced firewall
+                          solutions to enhance your network security.
                         </p>
                         <div className="icon-bottom">
                           <i className="icon-arrow-right" />
@@ -265,7 +270,7 @@ export default function Service1() {
                     </Link>
                   </div>
                   <div className="col-12 col-md-6 col-lg-3">
-                    <Link href="/service-details" className="icon-box3">
+                    <Link href="/contact-us" className="icon-box3">
                       <div className="flex-two icon-box-wrap">
                         <span className="number">06</span>
                         <div className="icons">
@@ -275,7 +280,8 @@ export default function Service1() {
                       <h3 className="title">Desktop Computing</h3>
                       <div className="inner-bottom">
                         <p className="des font-man">
-                          We approached WiaTech with complex project deliver
+                          Minutes Network Labs provides efficient desktop
+                          computing solutions to improve your productivity.
                         </p>
                         <div className="icon-bottom">
                           <i className="icon-arrow-right" />
@@ -284,7 +290,7 @@ export default function Service1() {
                     </Link>
                   </div>
                   <div className="col-12 col-md-6 col-lg-3">
-                    <Link href="/service-details" className="icon-box3">
+                    <Link href="/contact-us" className="icon-box3">
                       <div className="flex-two icon-box-wrap">
                         <span className="number">07</span>
                         <div className="icons">
@@ -294,7 +300,8 @@ export default function Service1() {
                       <h3 className="title">Market research</h3>
                       <div className="inner-bottom">
                         <p className="des font-man">
-                          We approached WiaTech with complex project deliver
+                          Minutes Network Labs provides insightful market
+                          research to inform your business strategies.
                         </p>
                         <div className="icon-bottom">
                           <i className="icon-arrow-right" />
@@ -313,7 +320,8 @@ export default function Service1() {
                       <h3 className="title">Web Development</h3>
                       <div className="inner-bottom">
                         <p className="des font-man">
-                          We approached WiaTech with complex project deliver
+                          Minutes Network Labs provides comprehensive web
+                          development services to create an online experiences.
                         </p>
                         <div className="icon-bottom">
                           <i className="icon-arrow-right" />
@@ -344,7 +352,7 @@ export default function Service1() {
                             </svg>
                           </div>
                         </div>
-                        <Link href="/#" className="button-src">
+                        <Link href="/contact-us" className="button-src">
                           Read More <i className="icon-angle-right" />
                         </Link>
                       </div>
@@ -403,8 +411,8 @@ export default function Service1() {
                           data-bs-parent="#accordionExample"
                         >
                           <div className="accordion-body">
-                            Accelerate innovation with world-class tech teams
-                            We’ll match you to an entire remote team .
+                            Network security and protection ensure your data is
+                            safe from cyber threats and unauthorized access.
                           </div>
                         </div>
                       </div>
@@ -438,8 +446,9 @@ export default function Service1() {
                           data-bs-parent="#accordionExample"
                         >
                           <div className="accordion-body">
-                            Accelerate innovation with world-class tech teams
-                            We’ll match you to an entire remote team .
+                            Browser safety and farewell measures protect your
+                            online activities and ensure a secure browsing
+                            experience.
                           </div>
                         </div>
                       </div>
@@ -473,8 +482,9 @@ export default function Service1() {
                           data-bs-parent="#accordionExample"
                         >
                           <div className="accordion-body">
-                            Accelerate innovation with world-class tech teams
-                            We’ll match you to an entire remote team .
+                            Infrastructure technology streamlines operations by
+                            integrating hardware, software, and networking
+                            resources.
                           </div>
                         </div>
                       </div>
@@ -508,8 +518,9 @@ export default function Service1() {
                           data-bs-parent="#accordionExample"
                         >
                           <div className="accordion-body">
-                            Accelerate innovation with world-class tech teams
-                            We’ll match you to an entire remote team .
+                            Management and support services enhance operational
+                            efficiency and provide essential assistance for your
+                            business needs.
                           </div>
                         </div>
                       </div>
@@ -522,30 +533,6 @@ export default function Service1() {
                       src="/assets/images/service/image-solution.jpg"
                       alt="image"
                     />
-                    <div className="counting-feature bg-5">
-                      <div className="progress-box2 flex-three">
-                        <div className="progress-skill">
-                          <div className="couter2">
-                            <CircleProgress percentage={98} />
-                          </div>
-                        </div>
-                        <div className="content-progress">
-                          <span className="percent2 text-white">98%</span>
-                          <h5 className="text-white">Project Success</h5>
-                        </div>
-                      </div>
-                      <div className="progress-box2 flex-three ">
-                        <div className="progress-skill">
-                          <div className="couter2">
-                            <CircleProgress percentage={93} />
-                          </div>
-                        </div>
-                        <div className="content-progress">
-                          <span className="percent2 text-white">63%</span>
-                          <h5 className="text-white">Happy Clients</h5>
-                        </div>
-                      </div>
-                    </div>
                   </div>
                 </div>
               </div>

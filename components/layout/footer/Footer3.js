@@ -47,66 +47,8 @@ export default function Footer3() {
                 alt="image"
                 className="logo"
               />
-              <p className="des font-man">
-                Sed ut persiciatis unde omnis natus voluptatem accusantium
-                dolore
-              </p>
-              {/* <div className="follow-social">
-								<span>Follow Us</span>
-								<ul className="social-footer flex-three">
-									<li>
-										<Link href="/#" className="flex-five"><i className="icon-facebook" /></Link>
-									</li>
-									<li>
-										<Link href="/#" className="flex-five"><i className="icon-twiter" /></Link>
-									</li>
-									<li>
-										<Link href="/#" className="flex-five"><i className="icon-ins" /></Link>
-									</li>
-									<li>
-										<Link href="/#" className="flex-five"><i className="icon-instagram" /></Link>
-									</li>
-								</ul>
-							</div> */}
             </div>
-            <div
-              className="footer-main-item menu-services wow fadeInUpSmall"
-              data-wow-delay=".3s"
-            >
-              <h4 className="title-footer2 ">IT Services</h4>
-              <ul className="menu-service">
-                <li>
-                  <Link href="/#">
-                    <i className="icon-right-icon" />
-                    IT Consultancy
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/#">
-                    <i className="icon-right-icon" />
-                    IT Management
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/#">
-                    <i className="icon-right-icon" />
-                    IT Supports
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/#">
-                    <i className="icon-right-icon" />
-                    Cloud Computing
-                  </Link>
-                </li>
-                <li>
-                  <Link href="/#">
-                    <i className="icon-right-icon" />
-                    Cyber Security
-                  </Link>
-                </li>
-              </ul>
-            </div>
+
             <div
               className="footer-main-item menu-suport wow fadeInUpSmall"
               data-wow-delay=".4s"
@@ -114,31 +56,31 @@ export default function Footer3() {
               <h4 className="title-footer2 ">Support</h4>
               <ul className="menu-service">
                 <li>
-                  <Link href="/#">
+                  <Link href="/contact-us">
                     <i className="icon-right-icon" />
                     Forum Support
                   </Link>
                 </li>
                 <li>
-                  <Link href="/#">
+                  <Link href="/faq">
                     <i className="icon-right-icon" />
                     Help &amp; FAQ
                   </Link>
                 </li>
                 <li>
-                  <Link href="/#">
+                  <Link href="/contact-us">
                     <i className="icon-right-icon" />
                     Contact Us
                   </Link>
                 </li>
                 <li>
-                  <Link href="/#">
+                  <Link href="/faq">
                     <i className="icon-right-icon" />
                     Pricing and plans
                   </Link>
                 </li>
                 <li>
-                  <Link href="/#">
+                  <Link href="/privacy&policy">
                     <i className="icon-right-icon" />
                     Cookies Policy
                   </Link>
@@ -174,7 +116,7 @@ export default function Footer3() {
               </form>
               <p className="privacy-policy">
                 By subscribing, you’re accept{" "}
-                <Link href="/#">Privacy Policy</Link>
+                <Link href="/privacy&policy">Privacy Policy</Link>
               </p>
             </div>
           </div>
@@ -186,22 +128,22 @@ export default function Footer3() {
           <div className="footer-bottom2 row">
             <div className="col-md-6">
               <p>
-                © 2023 Minutes Network Labs - IT Services. All rights reserved.
+                © 2024 Minutes Network Labs - IT Services. All rights reserved.
               </p>
             </div>
             <div className="col-md-6">
               <ul className="menu-right-bottom flex-six">
                 <li>
-                  <Link href="/#">Company</Link>
+                  <Link href="/faq">Company</Link>
                 </li>
                 <li>
-                  <Link href="/#">Support</Link>
+                  <Link href="/contact-us">Support</Link>
                 </li>
                 <li>
-                  <Link href="/#">Privacy</Link>
+                  <Link href="/privacy&policy">Privacy</Link>
                 </li>
                 <li>
-                  <Link href="/#">Faqs</Link>
+                  <Link href="/faq">Faqs</Link>
                 </li>
               </ul>
             </div>

@@ -1,6 +1,33 @@
+"use client";
 import Layout from "@/components/layout/Layout";
 import Link from "next/link";
+import emailjs from "@emailjs/browser";
+import React, { useState, useRef } from "react";
 export default function ContactUs() {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        process.env.NEXT_PUBLIC_SERVICE,
+        process.env.NEXT_PUBLIC_TEMPLATE,
+        form.current,
+        process.env.NEXT_PUBLIC_PUBLIC_KEY
+      )
+      .then(
+        (result) => {
+          setemailsub(true);
+          e.target.reset();
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+
+  const [emailsub, setemailsub] = useState(false);
   return (
     <>
       <Layout breadcrumbTitle="Contact">
@@ -15,14 +42,20 @@ export default function ContactUs() {
                         Get In Touch
                       </span>
                       <h2 className="title">
-                        Don’t Heisted To <br />
+                        Don’t Hesitate To <br />
                         Contact Us
                       </h2>
                       <p className="des">
                         {" "}
-                        Our expert team excels in website development, graphic
-                        design, digital marketing, and content creation to
-                        elevate and grow your business.
+                        Have questions about our services? Whether you need
+                        assistance with product design, IT management, data
+                        security, infrastructure planning, firewall
+                        advancements, desktop computing, market research, or web
+                        and mobile development, our team is here to help. Reach
+                        out to us to discuss your project requirements, and
+                        we'll provide tailored solutions to meet your business
+                        needs. Contact us today to get expert guidance and start
+                        turning your ideas into reality.
                       </p>
                     </div>
                     <div className="contact-item-wrap">
@@ -32,8 +65,7 @@ export default function ContactUs() {
                             <i className="icon-envelopes" />
                           </div>
                           <div className="content">
-                            <p>wiatechinfo@gmail.com</p>
-                            <p>www.wiatech.com</p>
+                            <h3>admin@mntlabs.io</h3>
                           </div>
                         </div>
                       </div>
@@ -44,59 +76,89 @@ export default function ContactUs() {
                   <div className="contact-us-page-form bg-2">
                     <h3 className="title">Send Us Message</h3>
                     <form
-                      className="contact-us-form"
+                      className="form-contact-home"
                       id="contactform"
-                      method="post"
-                      action="./contact/contact-process.php"
+                      ref={form}
+                      onSubmit={sendEmail}
                     >
-                      <fieldset className="mb-18">
-                        <label>Full Name</label>
-                        <input
-                          type="text"
-                          className="form-control"
-                          placeholder="Enter your email"
-                          name="name"
-                          id="name"
+                      <div className="input-group flex-one">
+                        <fieldset className="relative mb-20">
+                          <input
+                            type="text"
+                            className="form-control"
+                            id="name"
+                            placeholder="Name"
+                            name="name"
+                            required
+                          />
+                          <i className="icon-user" />
+                        </fieldset>
+                        <fieldset className="relative mb-20">
+                          <input
+                            type="email"
+                            className="form-control"
+                            id="email"
+                            placeholder="Email"
+                            name="email"
+                            required
+                          />
+                          <i className="icon-envelopes" />
+                        </fieldset>
+                      </div>
+                      <fieldset className="mb-20">
+                        <select
+                          className="nice-select"
+                          name="services"
+                          id="services"
                           required
-                        />
+                        >
+                          <option value="" disabled selected>
+                            Choose Services
+                          </option>
+                          <option value="" disabled selected>
+                            Choose Services
+                          </option>
+                          <option value="Product_Design">Product Design</option>
+                          <option value="It_Management">IT Management</option>
+                          <option value="Data_Security">Data Security</option>
+                          <option value="Infrastructure_Planning">
+                            Infrastructure Planning
+                          </option>
+                          <option value="Firewall_Advancement">
+                            Firewall Advancement
+                          </option>
+                          <option value="Desktop_Computing">
+                            Desktop Computing
+                          </option>
+                          <option value="Market_Research">
+                            Market Research
+                          </option>
+                          <option value="Web_Development">
+                            Web Development
+                          </option>
+                          <option value="Other">Other</option>
+                        </select>
                       </fieldset>
-                      <fieldset className="mb-18">
-                        <label>Email Address</label>
-                        <input
-                          type="email"
-                          className="form-control"
-                          placeholder="Enter your name"
-                          name="email"
-                          id="email"
-                          required
-                        />
-                      </fieldset>
-                      <fieldset className="mb-18">
-                        <label>Website</label>
-                        <input
-                          type="url"
-                          className="form-control"
-                          id="url"
-                          name="url"
-                          placeholder="Enter your website"
-                          required
-                        />
-                      </fieldset>
-                      <fieldset className=" mb-18">
-                        <label>Message</label>
+                      <fieldset className=" mb-15">
                         <textarea
-                          rows={5}
+                          rows={4}
                           cols={50}
-                          placeholder="Write message"
+                          placeholder="Message"
                           name="message"
                           id="message"
+                          required
                         />
                       </fieldset>
-                      <fieldset>
+                      <fieldset className="center">
                         <button className="btn-submit" type="submit">
-                          Send Message <i className="icon-right-icon" />
+                          Send Message Us <i className="icon-right-icon" />
                         </button>
                       </fieldset>
+                      {emailsub && (
+                        <p className="text-green-500 text-md mb-5">
+                          Email sent successfully!
+                        </p>
+                      )}
                     </form>
                   </div>
                 </div>

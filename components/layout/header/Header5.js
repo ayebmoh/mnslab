@@ -30,13 +30,13 @@ export default function Header5({
                         <Link href="/">
                           <img
                             style={{
-                              width: "130px",
-                              height: "100px",
+                              width: "100px",
+                              height: "90px",
                               marginTop: "5px",
                               marginBottom: "8px",
                               marginLeft: "40px",
                             }}
-                            src="/assets/images/Logo.png"
+                            src="/assets/images/White_logo.png"
                             alt="Logo"
                           />
                         </Link>

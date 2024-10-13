@@ -42,7 +42,9 @@ export default function Service6() {
                       Design <span className="number">01</span>
                     </p>
                     <h3 className="title">
-                      <Link href="#">Provide Professional Web Design</Link>
+                      <Link href="/design-service">
+                        Provide Professional Web Design
+                      </Link>
                     </h3>
                   </div>
                   <p className="des">
@@ -50,7 +52,7 @@ export default function Service6() {
                     elevate your business.
                   </p>
                   <div className="btn-main">
-                    <Link href="#" className="btn-service">
+                    <Link href="/design-service" className="btn-service">
                       <i className="icon-arrow-rights" />
                     </Link>
                   </div>
@@ -100,7 +102,9 @@ export default function Service6() {
                       Marketing <span className="number">03</span>
                     </p>
                     <h3 className="title">
-                      <Link href="#">Digital Marketing Strategy</Link>
+                      <Link href="/marketing-service">
+                        Digital Marketing Strategy
+                      </Link>
                     </h3>
                   </div>
                   <p className="des">
@@ -108,7 +112,7 @@ export default function Service6() {
                     growth and elevate your business.
                   </p>
                   <div className="btn-main">
-                    <Link href="#" className="btn-service">
+                    <Link href="/marketing-service" className="btn-service">
                       <i className="icon-arrow-rights" />
                     </Link>
                   </div>
@@ -128,7 +132,9 @@ export default function Service6() {
                       Motion Design <span className="number">04</span>
                     </p>
                     <h3 className="title">
-                      <Link href="#">3D Design, Motions &amp; Animations</Link>
+                      <Link href="/3d-service">
+                        3D Design, Motions &amp; Animations
+                      </Link>
                     </h3>
                   </div>
                   <p className="des">
@@ -136,7 +142,7 @@ export default function Service6() {
                     animations to bring your vision to life.
                   </p>
                   <div className="btn-main">
-                    <Link href="#" className="btn-service">
+                    <Link href="/3d-service" className="btn-service">
                       <i className="icon-arrow-rights" />
                     </Link>
                   </div>
@@ -156,7 +162,7 @@ export default function Service6() {
                       Content <span className="number">05</span>
                     </p>
                     <h3 className="title">
-                      <Link href="#">
+                      <Link href="/writing-service">
                         Content Writing &amp; Email Marketing
                       </Link>
                     </h3>
@@ -166,7 +172,7 @@ export default function Service6() {
                     marketing campaigns to engage and convert your audience.
                   </p>
                   <div className="btn-main">
-                    <Link href="#" className="btn-service">
+                    <Link href="/writing-service" className="btn-service">
                       <i className="icon-arrow-rights" />
                     </Link>
                   </div>
